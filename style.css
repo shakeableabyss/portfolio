@@ -1,3 +1,5 @@
+/* define standard element styles first */
+
 html {
   height: 100%;
   width: 100%;
@@ -17,6 +19,27 @@ footer {
   background-color: darkblue;
 }
 
+ul {
+  text-align: center;
+}
+
+li {
+  text-align: left;
+}
+
+hr {
+  color: darkblue;
+  background-color: darkblue;
+  border-width: 0px
+  width: 100%;
+  height: 2px;
+  
+}
+
+h1, h2 {
+  text-align: center;
+}
+
 /* class definitions:
    .nameTitle   = Section at the top containing my name, picture, and job title.
    .description = Section next to nameTitle with a brief description of me
@@ -25,24 +48,38 @@ footer {
 */
 
 /* Common styles that I want each section to have 
-    Note: occasionally, some properties are overriden in the html*/
+    Note: occasionally, some properties may be overriden in the html*/
 .nameTitle,
 .description,
 .aboutMe,
 .contact {
   font-family: Arial, Helvetica, sans-serif;
-  color: darkblue;
   background-color: white;
   display: inline-block;
   text-decoration: none;
   margin: 10px;
   padding: 0px 12px;
   border-radius: 20px;
-  width: 30%;
 }
 
 .nameTitle {
-  text-align: center;
+  color: darkblue;
+  text-align: left;
+  width: 35%;
+}
+
+.description {
+  width: 35%;  
+  vertical-align: 45%;
+}
+
+.aboutMe {
+  text-align: left;
+  width: 40%;
+}
+
+.contact {
+  text-align: left;
 }
 
 /* Pseudo-classes to define link states/styles */
