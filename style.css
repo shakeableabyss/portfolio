@@ -37,6 +37,7 @@ hr {
 }
 
 h1, h2 {
+  width:100%
   text-align: center;
 }
 
@@ -64,8 +65,8 @@ h1, h2 {
 
 .nameTitle {
   color: darkblue;
-  text-align: left;
-  width: 35%;
+  text-align: center;
+  width: 20%;
 }
 
 .description {
