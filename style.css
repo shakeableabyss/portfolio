@@ -1,5 +1,7 @@
 /* define standard element styles first */
 
+/* The basic parts of the web page  */
+
 html {
   height: 100%;
   width: 100%;
@@ -19,7 +21,10 @@ footer {
   background-color: darkblue;
 }
 
-ul {
+/* Ordered lists, unordered lists, and line items  */
+
+ul,
+ol {
   text-align: center;
 }
 
@@ -27,24 +32,27 @@ li {
   text-align: left;
 }
 
+/* Horizontal lines  */
+
 hr {
   color: darkblue;
   background-color: darkblue;
-  border-width: 0px
-  width: 100%;
+  border-width: 0px width: 100%;
   height: 2px;
-  
+
 }
 
-h1, h2 {
-  width:100%
-  text-align: center;
+/* Headers  */
+
+h1,
+h2 {
+  width: 100% text-align: center;
 }
 
 /* class definitions:
    .nameTitle   = Section at the top containing my name, picture, and job title.
    .description = Section next to nameTitle with a brief description of me
-   .aboutMe     = Some text paragraphs explaining who I am
+   .aboutMe     = Mostly text paragraphs explaining who I am
    .contact     = A couple sentences followed by links to my linkedin and github pages
 */
 
@@ -63,22 +71,28 @@ h1, h2 {
   border-radius: 20px;
 }
 
+/* .nameTitle   = Section at the top containing my name, picture, and job title. */
 .nameTitle {
   color: darkblue;
   text-align: center;
-  width: 20%;
+  width: 400px;
 }
 
+
+/* .description = Section next to nameTitle with a brief description of me */
 .description {
-  width: 35%;  
+  font-size: large;
+  width: 35%;
   vertical-align: 45%;
 }
 
+/* .aboutMe     = Mostly text paragraphs explaining who I am */
 .aboutMe {
   text-align: left;
   width: 40%;
 }
 
+/* .contact     = A couple sentences followed by links to my linkedin and github pages */
 .contact {
   text-align: left;
 }
