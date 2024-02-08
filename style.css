@@ -2,21 +2,28 @@
 
 /* The basic parts of the web page  */
 
+/* required */
 html {
   height: 100%;
   width: 100%;
 }
 
+/* the body section of the page */
 body {
+  /*  centered items on light blue background */
   background: lightblue;
   text-align: center;
 }
 
+/* the header section of the page */
 header {
+  /*  center everything */
   text-align: center;
 }
 
+/* the footer section of the page */
 footer {
+  /*  white text on dark blue background */
   color: white;
   background-color: darkblue;
 }
@@ -25,16 +32,19 @@ footer {
 
 ul,
 ol {
+  /*  center text on ordered and unordered lists */
   text-align: center;
 }
 
 li {
+  /*  invididual lines within lists should be left-aligned */
   text-align: left;
 }
 
 /* Horizontal lines  */
 
 hr {
+  /* dark blue lines to match other text and areas */
   color: darkblue;
   background-color: darkblue;
   border-width: 0px width: 100%;
@@ -46,7 +56,9 @@ hr {
 
 h1,
 h2 {
-  width: 100% text-align: center;
+  /*  stretch headers to fit components and center text*/
+  width: 100% 
+  text-align: center;
 }
 
 /* class definitions:
@@ -73,6 +85,7 @@ h2 {
 
 /* .nameTitle   = Section at the top containing my name, picture, and job title. */
 .nameTitle {
+  /*  centered dark blue text on white (default color) background */
   color: darkblue;
   text-align: center;
   width: 400px;
@@ -81,36 +94,42 @@ h2 {
 
 /* .description = Section next to nameTitle with a brief description of me */
 .description {
+  /*  font size will be large */
   font-size: large;
   width: 35%;
-  vertical-align: 45%;
 }
 
 /* .aboutMe     = Mostly text paragraphs explaining who I am */
 .aboutMe {
+  /*  left-align the longer paragraphs of text to make them more readable */
   text-align: left;
   width: 40%;
 }
 
 /* .contact     = A couple sentences followed by links to my linkedin and github pages */
 .contact {
-  text-align: left;
+  /*  just left align the text here */
+ text-align: left;
 }
 
 /* Pseudo-classes to define link states/styles */
 
 a:link {
+  /*  dark blue links */
   color: darkblue;
 }
 
 a:visited {
+  /*  visited links will also be dark blue */
   color: darkblue;
 }
 
 a:hover {
+  /*  light blue when hovered to make it clear it is a link */
   color: lightblue;
 }
 
 a:active {
+  /*  also light blue when actively clicking */
   color: lightblue;
 }
